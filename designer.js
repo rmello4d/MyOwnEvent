@@ -1,15 +1,13 @@
-(function() {
-    var MyOwnEvent = Widget.MyOwnEvent.inherit(WAF.require('waf-behavior/studio'));
+(function(MyOwnEvent) {
+   
+	/*Default positioning*/
+    MyOwnEvent.setWidth('200');
+    MyOwnEvent.setHeight('20');
+	// adding the event  to the Studio Events panel
+    MyOwnEvent.addEvent({ name: 'MyEvent' });
+});
 
-	// adding attributes
-    MyOwnEvent.addAttributes([{
-    	'name':'data-width',
-    	'description':'Width',
-    	'defaultValue': '100px'
-    },{
-    	'name':'data-height',
-    	'description':'Height',
-    	'defaultValue': '20px'
+// For more information, refer to http://doc.wakanda.org/Wakanda0.DevBranch/help/Title/en/page3870.html '20px'
     }]);   
     
     
