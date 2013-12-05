@@ -26,17 +26,3 @@ WAF.define('MyOwnEvent', function() {
 });
 
 // For more information, refer to http://doc.wakanda.org/Wakanda0.DevBranch/help/Title/en/page3871.html
-) == 'yellow'){
-		    		
-			 		//firing the MellowYellow Event;
-			    	thisWidget.fire(new Event.MellowYellow({ value: 'MellowYellow' }));
-				}
-		    }		 		
- 		
- 		}.bind(this));
-
-			
-    };
-})();
-
-// For more information, refer to http://doc.wakanda.org/Wakanda0.DevBranch/help/Title/en/page3871.html
