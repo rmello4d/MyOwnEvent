@@ -3,10 +3,10 @@ WAF.define('MyOwnEvent', function() {
 	var widget = WAF.require('waf-core/widget');
 
 	//Creating Widget
-    	var MyOwnEvent = widget.create('MyOwnEvent');
-    	MyOwnEvent.tagname='input';
+	var MyOwnEvent = widget.create('MyOwnEvent');
+	MyOwnEvent.tagname='input';
 
-    	MyOwnEvent.prototype.init = function () {
+	MyOwnEvent.prototype.init = function () {
 
 		$(this.node).keypress( function(e) {
 		
@@ -14,13 +14,13 @@ WAF.define('MyOwnEvent', function() {
 			if(e.charCode == 13) {
 			    			    		
 				//firing the MellowYellow Event;
-				this.fire("MyEvent", { value: 'Hello!!' });
+				this.fire("MyEvent", { value: 'Testing My Own Event' });
 					
-			 }		 		
+			}		 		
 	 		
-	 	}.bind(this));
+		}.bind(this));
 		
-    	};
+	};
 	return MyOwnEvent;
 });
 
