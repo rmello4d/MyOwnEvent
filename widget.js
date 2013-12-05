@@ -1,27 +1,26 @@
 WAF.define('MyOwnEvent', function() {
 
-	var widget = WAF.require('waf-core/widget'),
-		Event = WAF.require('waf-core/event');
+	var widget = WAF.require('waf-core/widget');
 
 	//Creating Widget
-    var MyOwnEvent = widget.create('MyOwnEvent');
-    MyOwnEvent.tagname='input';
+    	var MyOwnEvent = widget.create('MyOwnEvent');
+    	MyOwnEvent.tagname='input';
 
-    MyOwnEvent.prototype.init = function () {
+    	MyOwnEvent.prototype.init = function () {
 
 		$(this.node).keypress( function(e) {
 		
-				//verifying if the keyboard enter was pressed
-			    if(e.charCode == 13) {
+			//verifying if the keyboard enter was pressed
+			if(e.charCode == 13) {
 			    			    		
-				 		//firing the MellowYellow Event;
-				    	this.fire("MyEvent", { value: 'Hello!!' });
+				//firing the MellowYellow Event;
+				this.fire("MyEvent", { value: 'Hello!!' });
 					
-			    }		 		
+			 }		 		
 	 		
 	 	}.bind(this));
 		
-    };
+    	};
 	return MyOwnEvent;
 });
 
