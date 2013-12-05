@@ -40,7 +40,7 @@ In this example, when you finish typing into the input element and hit <enter>, 
 
 // eventHandlers
 
-	myOwnEvent1.MellowYellow = function myOwnEvent1_MyEvent (event)
+	myOwnEvent1.MyEvent = function myOwnEvent1_MyEvent (event)
 	{
 		alert(event.data.value);
 	};
