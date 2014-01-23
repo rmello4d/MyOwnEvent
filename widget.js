@@ -4,7 +4,7 @@ WAF.define('MyOwnEvent', function() {
 
 	//Creating Widget
 	var MyOwnEvent = widget.create('MyOwnEvent');
-	MyOwnEvent.tagname='input';
+	MyOwnEvent.tagName='input';
 
 	MyOwnEvent.prototype.init = function () {
 
